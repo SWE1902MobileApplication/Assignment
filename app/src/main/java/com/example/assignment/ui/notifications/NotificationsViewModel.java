@@ -1,4 +1,4 @@
-package com.example.gogreengo.ui.notifications;
+package com.example.assignment.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

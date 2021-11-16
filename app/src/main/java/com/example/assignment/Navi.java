@@ -31,8 +31,11 @@ public class Navi extends AppCompatActivity {
                 case R.id.nav_home:
                     selectedFragment = new HomeFragment();
                     break;
-                case R.id.nav_calc:
-                    selectedFragment = new CalcFragment();
+                case R.id.nav_info:
+                    selectedFragment = new InfomationFragment();
+                    break;
+                case R.id.nav_maps:
+                    selectedFragment = new MapFragment();
                     break;
                 case R.id.nav_profile:
                     selectedFragment = new ProfileFragment();

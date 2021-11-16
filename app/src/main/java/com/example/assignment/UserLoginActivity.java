@@ -2,7 +2,7 @@ package com.example.assignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;import com.example.gogreengo.R;
+import android.os.Bundle;import com.example.assignment.R;
 
 public class UserLoginActivity extends AppCompatActivity {
 

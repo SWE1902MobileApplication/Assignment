@@ -4,13 +4,13 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 
-import com.example.gogreengo.R;import com.google.android.gms.maps.CameraUpdateFactory;
+import com.example.assignment.R;import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.example.gogreengo.databinding.ActivityMapsBinding;
+import com.example.assignment.databinding.ActivityMapsBinding;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 

@@ -16,6 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment">
         <activity
+            android:name=".Navi"
+            android:exported="true"
+            android:label="@string/title_activity_navi" />
+        <activity
             android:name=".Register"
             android:exported="true" />
         <!--

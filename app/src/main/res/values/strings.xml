@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Assignment</string>
+    <string name="title_activity_maps">AAAAAAAAAAAAAAAAA</string>
+    <string name="title_activity_register">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</string>
     <string name="title_activity_bottom_navi">BottomNavi</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

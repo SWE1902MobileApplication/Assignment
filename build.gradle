@@ -9,6 +9,14 @@ buildscript {
         classpath 'com.google.gms:google-services:4.3.10'  // Google Services plugin
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        //implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+        def nav_version = "2.3.5"
+
+        //The rest of the dependencies here
+
+        // Kotlin
+        //implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+        //implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     }
 }
 

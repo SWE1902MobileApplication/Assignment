@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_bottom_navi.xml" value="0.1" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_register.xml" value="0.20244565217391305" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_information.xml" value="0.19322916666666667" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_login.xml" value="0.5" />

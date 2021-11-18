@@ -14,7 +14,7 @@
     <item
         android:id="@+id/navigation_backyard"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Info" />
+        android:title="Backyard" />
 
     <item
         android:id="@+id/navigation_map"

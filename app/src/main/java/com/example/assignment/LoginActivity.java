@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
 
-        String email, password;
+        String email = "", password = "";
         //TODO obtain input
 
         auth = FirebaseAuth.getInstance();

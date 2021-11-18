@@ -26,7 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        String email, password;
+        String email = "", password = "";
         //TODO obtain input
 
         auth.createUserWithEmailAndPassword(email, password)

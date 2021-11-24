@@ -28,7 +28,11 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:layout_column="1"
         android:text="First Name" />
-
+    <EditText
+        android:id="@+id/regFirst"
+        android:hint="First name..."
+        android:inputType="textPersonName"
+        />
 </TableRow>
 
 <TableRow>
@@ -38,6 +42,11 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:layout_column="1"
         android:text="Last Name" />
+    <EditText
+        android:id="@+id/regLast"
+        android:hint="Last name..."
+        android:inputType="textPersonName"
+        />
 
 </TableRow>
 
@@ -50,7 +59,11 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:layout_column="1"
         android:text="E-mail Address" />
-
+    <EditText
+        android:id="@+id/regEmail"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        />
 </TableRow>
 
 <TableRow
@@ -62,7 +75,10 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:layout_column="1"
         android:text="Password" />
-
+    <EditText
+        android:id="@+id/regPwd"
+        android:hint="*****"
+        android:inputType="textPassword"/>
 </TableRow>
 
 <TableRow
@@ -74,6 +90,10 @@ tools:context=".MainActivity">
         android:layout_height="wrap_content"
         android:layout_column="1"
         android:text="Confirm Password" />
+    <EditText
+        android:id="@+id/regConf"
+        android:hint="*****"
+        android:inputType="textPassword"/>
 
 </TableRow>
 
@@ -93,7 +113,7 @@ tools:context=".MainActivity">
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="2"

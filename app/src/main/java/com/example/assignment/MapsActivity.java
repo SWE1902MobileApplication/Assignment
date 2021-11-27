@@ -18,17 +18,17 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-//public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    /*private GoogleMap mMap;
+    private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_maps);
+        setContentView(R.layout.fragment_map);
         // Obtain the SupportMapFragment and get notified
         // when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapView3);
         mapFragment.getMapAsync(this);
     }
 
@@ -36,21 +36,36 @@ import com.google.android.gms.maps.model.MarkerOptions;
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
      * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
+     * we  add markers around PJ, Selangor.
      * If Google Play services is not installed on the device, the user will be prompted to install
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
+     **/
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney")
+        // Add a marker in a location and move the camera
+        LatLng loc1 = new LatLng(3.1281627946385404, 101.59842635254633);
+        mMap.addMarker(new MarkerOptions().position(loc1).title("Marker in loc1")
                 // below line is use to add custom marker on our map.
                 .icon(BitmapFromVector(getApplicationContext(), R.drawable.ic_flag)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(loc1));
+
+        // Add a marker in a location and move the camera
+        LatLng loc2 = new LatLng(3.1210986014141002, 101.60200933298778);
+        mMap.addMarker(new MarkerOptions().position(loc2).title("Marker in loc2")
+                // below line is use to add custom marker on our map.
+                .icon(BitmapFromVector(getApplicationContext(), R.drawable.ic_flag)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(loc2));
+
+        // Add a marker in a location and move the camera
+        LatLng loc3 = new LatLng(3.120903672634574, 101.59665254297104);
+        mMap.addMarker(new MarkerOptions().position(loc3).title("Marker in loc3")
+                // below line is use to add custom marker on our map.
+                .icon(BitmapFromVector(getApplicationContext(), R.drawable.ic_flag)));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(loc3));
     }
 
     private BitmapDescriptor BitmapFromVector(Context context, int vectorResId) {
@@ -74,5 +89,4 @@ import com.google.android.gms.maps.model.MarkerOptions;
         // after generating our bitmap we are returning our bitmap. 
         return BitmapDescriptorFactory.fromBitmap(bitmap);
     }
-    */
-//}
+}

@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 updateText();
-                if(validateInput()){
+                if (validateInput()) {
                     loginUser();
                 }
                 //TODO error
@@ -53,16 +53,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void updateText(){
+    private void updateText() {
         email = inputEmail.getText().toString();
         pass = inputPass.getText().toString();
     }
 
-    private boolean validateInput(){
+    private boolean validateInput() {
         return !(email.equals("") || pass.equals(""));
     }
 
-    private void loginUser(){
+    private void loginUser() {
         FirebaseAuth auth = FirebaseAuth.getInstance();
 
         auth.signInWithEmailAndPassword(email, pass)
@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Log.d(TAG, "signInWithEmail:success");
-                            ((Global)getApplication()).setAuth(auth);
-                            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                            ((Global) getApplication()).setAuth(auth);
+                            startActivity(new Intent(MainActivity.this, MapsActivity.class));
                             //startActivity(new Intent(MainActivity.this, CalendarActivity.class));
                         } else {
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -80,6 +80,12 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
+
                 });
+    }
+
+    public void MapPage(View view) {
+        Intent intent = new Intent(this, MapsActivity.class);
+        startActivity(intent);
     }
 }

@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Log.d(TAG, "signInWithEmail:success");
                             ((Global)getApplication()).setAuth(auth);
-                            startActivity(new Intent(MainActivity.this, CalendarActivity.class));
+                            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                            //startActivity(new Intent(MainActivity.this, CalendarActivity.class));
                         } else {
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
@@ -81,11 +82,4 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-
-    public void BackyardPage(View view){
-        Intent intent = new Intent(this,CalendarActivity.class);
-        startActivity(intent);
-
-    }
-
 }

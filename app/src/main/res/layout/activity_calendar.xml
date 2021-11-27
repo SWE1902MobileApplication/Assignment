@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/back"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/white"
             android:background="@null"
             android:textStyle="bold"
             android:onClick="previousMonthAction"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/forward"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/white"
             android:background="@null"
             android:textStyle="bold"
             android:onClick="nextMonthAction"
@@ -52,6 +52,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUN"
+            android:textColor="@color/purple_200"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
 
         <TextView
             android:layout_width="0dp"
@@ -107,14 +116,7 @@
             android:textAlignment="center"
             android:textSize="16sp"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="SUN"
-            android:textColor="@color/purple_200"
-            android:textAlignment="center"
-            android:textSize="16sp"/>
+
 
 
     </LinearLayout>

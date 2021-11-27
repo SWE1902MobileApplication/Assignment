@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment">
         <activity
-            android:name=".CalendarActivity"
+            android:name=".BackyardActivity"
             android:exported="true" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -42,6 +42,9 @@
             android:name=".RegisterActivity"
             android:exported="true"
             android:label="@string/title_activity_register" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

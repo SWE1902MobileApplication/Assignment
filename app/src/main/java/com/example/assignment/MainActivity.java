@@ -83,9 +83,4 @@ public class MainActivity extends AppCompatActivity {
 
                 });
     }
-
-    public void MapPage(View view) {
-        Intent intent = new Intent(this, MapsActivity.class);
-        startActivity(intent);
-    }
 }

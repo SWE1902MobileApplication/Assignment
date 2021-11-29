@@ -17,10 +17,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Assignment">
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+        android:theme="@style/Theme.Assignment"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:theme">
+
         <activity
             android:name=".BackyardActivity"
             android:exported="true" />
@@ -37,7 +37,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="${AIzaSyCLW_rt7wCKgDaUc_QhID9IP2cdAr61-t0}" />
+            android:value="$AIzaSyCLW_rt7wCKgDaUc_QhID9IP2cdAr61-t0" />
 
         <activity
             android:name=".MapsActivity"
@@ -55,6 +55,9 @@
             android:exported="true"></activity>
         <activity
             android:name=".TestActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".EventEditActivity"
             android:exported="true"></activity>
         <activity
             android:name=".MainActivity"

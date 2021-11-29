@@ -7,6 +7,7 @@
          location permissions for the "MyLocation" functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:name=".Global"
@@ -47,6 +48,9 @@
             android:label="@string/title_activity_register" />
         <activity
             android:name=".CalendarActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".TestActivity"
             android:exported="true"></activity>
         <activity
             android:name=".MainActivity"

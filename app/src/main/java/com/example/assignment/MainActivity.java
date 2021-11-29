@@ -72,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Log.d(TAG, "signInWithEmail:success");
                             ((Global) getApplication()).setAuth(auth);
-                            //startActivity(new Intent(MainActivity.this, MapsActivity.class));
+                            startActivity(new Intent(MainActivity.this, MapsActivity.class));
                             //startActivity(new Intent(MainActivity.this, HomeActivity.class));
                             //startActivity(new Intent(MainActivity.this, CalendarActivity.class));
-                            startActivity(new Intent(MainActivity.this, TestActivity.class));
+                            //startActivity(new Intent(MainActivity.this, TestActivity.class));
                         } else {
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",

@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 if (validateInput()) {
                     loginUser();
                 }
-                //TODO error
             }
         });
         register.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +60,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean validateInput() {
-        return !(email.equals("") || pass.equals(""));
+        if(email.equals("")){
+            inputEmail.setError("Cannot be empty");
+            inputEmail.requestFocus();
+            return false;
+        }
+        if(pass.equals("")){
+            inputPass.setError("Cannot be empty");
+            inputPass.requestFocus();
+            return false;
+        }
+        return true;
     }
 
     private void loginUser() {
@@ -80,6 +91,22 @@ public class MainActivity extends AppCompatActivity {
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
+                            Exception e = task.getException();
+                            if (e instanceof FirebaseAuthInvalidCredentialsException) {
+                                inputPass.setError("Incorrect password");
+                                inputPass.requestFocus();
+                            } else if (e instanceof FirebaseAuthInvalidUserException) {
+                                String errorCode = ((FirebaseAuthInvalidUserException) e).getErrorCode();
+
+                                if (errorCode.equals("ERROR_USER_NOT_FOUND")) {
+                                    inputEmail.setError("No matching account found");
+                                } else if (errorCode.equals("ERROR_USER_DISABLED")) {
+                                    inputEmail.setError("User account has been disabled");
+                                } else {
+                                    inputEmail.setError(e.getLocalizedMessage());
+                                }
+                                inputEmail.requestFocus();
+                            }
                         }
                     }
                 });

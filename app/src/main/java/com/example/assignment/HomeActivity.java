@@ -9,13 +9,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNav;
-    private Button nnBtn;
+    private ImageButton nnBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

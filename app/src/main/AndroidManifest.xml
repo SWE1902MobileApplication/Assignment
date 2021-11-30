@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".Global"
@@ -37,7 +38,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="$AIzaSyCLW_rt7wCKgDaUc_QhID9IP2cdAr61-t0" />
+            android:value="AIzaSyB67lK2CDOqgrVsPgw-8TwgrmpmUIQY-tI" />
 
         <activity
             android:name=".InformationActivity"

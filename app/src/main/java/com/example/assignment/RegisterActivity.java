@@ -16,6 +16,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -45,8 +49,6 @@ public class RegisterActivity extends AppCompatActivity {
                 updateText();
                 if(validateInput()){
                     registerUser();
-                    //TODO check success
-                    finishActivity(0);
                 }
             }
         });
@@ -62,9 +64,37 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private boolean validateInput(){
-        return !(email.equals("") || pass.equals("") || first.equals("") || last.equals("") || confirm.equals(""))
-                && pass.equals(confirm);
-        //TODO error
+        if(first.equals("")){
+            regFirst.setError("Cannot be empty");
+            regFirst.requestFocus();
+            return false;
+        }
+        if(last.equals("")){
+            regLast.setError("Cannot be empty");
+            regLast.requestFocus();
+            return false;
+        }
+        if(email.equals("")){
+            regEmail.setError("Cannot be empty");
+            regEmail.requestFocus();
+            return false;
+        }
+        if(pass.equals("")){
+            regPass.setError("Cannot be empty");
+            regPass.requestFocus();
+            return false;
+        }
+        if(confirm.equals("")){
+            regConf.setError("Cannot be empty");
+            regConf.requestFocus();
+            return false;
+        }
+        if(!confirm.equals(pass)){
+            regConf.setError("Should be the same as password");
+            regConf.requestFocus();
+            return false;
+        }
+        return true;
     }
 
     private void registerUser() {
@@ -76,11 +106,22 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, "Register success.",
                     Toast.LENGTH_SHORT).show();
                     //TODO store user info, init user records
+                    finishActivity(0);
                 }else{
-                    //TODO fail message
                     Log.w(TAG, "createUserWithEmailAndPassword:failure", task.getException());
                     Toast.makeText(RegisterActivity.this, "Register failed.",
                     Toast.LENGTH_SHORT).show();
+                    Exception e = task.getException();
+                    if(e instanceof FirebaseAuthWeakPasswordException) {
+                        regPass.setError("Weak password");
+                        regPass.requestFocus();
+                    }else if(e instanceof FirebaseAuthInvalidCredentialsException) {
+                        regEmail.setError("Invalid email");
+                        regEmail.requestFocus();
+                    }else if(e instanceof FirebaseAuthUserCollisionException) {
+                        regEmail.setError("User exist");
+                        regEmail.requestFocus();
+                    }
                 }
             }
         });

@@ -40,10 +40,6 @@
             android:value="$AIzaSyCLW_rt7wCKgDaUc_QhID9IP2cdAr61-t0" />
 
         <activity
-            android:name=".MapsActivity"
-            android:exported="true"
-            android:label="@string/title_activity_maps" />
-        <activity
             android:name=".InformationActivity"
             android:exported="true" />
         <activity

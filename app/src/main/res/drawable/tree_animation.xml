@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/tree1" android:duration="200"/>
+    <item android:drawable="@drawable/tree2" android:duration="200"/>
+    <item android:drawable="@drawable/tree3" android:duration="200"/>
+    <item android:drawable="@drawable/tree4" android:duration="200"/>
+    <item android:drawable="@drawable/tree5" android:duration="200"/>
+    <item android:drawable="@drawable/tree6" android:duration="200"/>
+    <item android:drawable="@drawable/tree7" android:duration="200"/>
+    <item android:drawable="@drawable/tree8" android:duration="200"/>
+    <item android:drawable="@drawable/tree9" android:duration="200"/>
+    <item android:drawable="@drawable/tree10" android:duration="200"/>
+
+</animation-list>
+

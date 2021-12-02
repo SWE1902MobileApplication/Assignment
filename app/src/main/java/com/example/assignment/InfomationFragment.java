@@ -2,11 +2,16 @@ package com.example.assignment;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +28,9 @@ public class InfomationFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private Button addbutton;
+    private CardView baseCard;
+    private LinearLayout root;
 
     public InfomationFragment() {
         // Required empty public constructor
@@ -61,4 +69,23 @@ public class InfomationFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_infomation, container, false);
     }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        //baseCard=getView().findViewById(R.id.baseCard);
+        //root=getView().findViewById(R.id.root);
+        //addbutton = getView().findViewById(R.id.butAdd);
+        //addbutton.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+                //CardView newCardView = new CardView(getContext()); // creating CardView
+                //newCardView.setLayoutParams(baseCard.getLayoutParams());
+                //root.addView(newCardView, root.getChildCount() - 1);
+            //}
+    };
+
+
+
 }
+

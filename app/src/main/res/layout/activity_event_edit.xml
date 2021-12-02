@@ -85,4 +85,24 @@
         android:layout_below="@id/text_view"
         android:layout_height="wrap_content" />
 
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:text="Add Label" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Weight" />/>
+    </com.google.android.material.chip.ChipGroup>
+
+
 </LinearLayout>

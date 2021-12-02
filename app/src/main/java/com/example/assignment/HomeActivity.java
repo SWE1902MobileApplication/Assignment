@@ -22,9 +22,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        bottomNav = findViewById(R.id.nav_view);
+        bottomNav=findViewById(R.id.nav_view);
         bottomNav.setOnItemSelectedListener(navListener);
-        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, new HomeFragment()).commit();
 
         nnBtn = findViewById(R.id.nnBtn);
         nnBtn.setOnClickListener(new View.OnClickListener() {
@@ -41,24 +40,33 @@ public class HomeActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
             Fragment selectedFragment = null;
+
+            int id = 0;
+
             switch (item.getItemId()){
-                case R.id.navigation_home:
-                    selectedFragment = new HomeFragment();
-                    break;
                 case R.id.navigation_info:
                     selectedFragment = new InfomationFragment();
-                    break;
-                case R.id.navigation_backyard:
-                    selectedFragment = new BackyardFragment();
+                    id = 0;
                     break;
                 case R.id.navigation_map:
                     selectedFragment = new MapFragment();
+                    id = 1;
+                    break;
+                case R.id.navigation_home:
+                    selectedFragment = new HomeFragment();
+                    id = 2;
+                    break;
+                case R.id.navigation_backyard:
+                    selectedFragment = new CalendarActivity();
+                    id = 3;
                     break;
                 case R.id.navigation_profile:
                     selectedFragment = new ProfileFragment();
+                    id = 4;
                     break;
             }
-            // TODO bottomNav.getMenu().getItem(item.getGroupId()).setChecked(true);
+            bottomNav.getMenu().getItem(id).setChecked(true);
+            // TODO first fragment
             getSupportFragmentManager().beginTransaction().replace(R.id.frag_container,selectedFragment).commit();
             //id fragment_container???
             return false;

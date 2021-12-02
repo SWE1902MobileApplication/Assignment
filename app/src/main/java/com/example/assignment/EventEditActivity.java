@@ -2,20 +2,24 @@ package com.example.assignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+import com.google.android.material.chip.Chip;
 
 public class EventEditActivity extends AppCompatActivity
 {
     private EditText eventNameET;
     private TextView eventDateTV;
     CalendarUtils cu;
+    Chip chip1,chip2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,6 +44,21 @@ public class EventEditActivity extends AppCompatActivity
             }
         });
 
+        chip1 = findViewById(R.id.chipLabel);
+        chip1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(EventEditActivity.this, "Action Completed", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        chip2 = findViewById(R.id.chipWeight);
+        chip2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(EventEditActivity.this, "Action Completed", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private static final String[] LABEL = new String[] {
@@ -57,6 +76,7 @@ public class EventEditActivity extends AppCompatActivity
         String eventName = eventNameET.getText().toString();
         Event newEvent = new Event(eventName, cu.selectedDate);
         Event.eventsList.add(newEvent);
+        //startActivity(new Intent(EventEditActivity.this, .class));
         finish();
     }
 

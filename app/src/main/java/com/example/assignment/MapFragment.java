@@ -27,7 +27,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +51,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
         mMap = googleMap;
 
         // Add a marker in a location and move the camera
@@ -75,6 +73,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 // below line is use to add custom marker on our map.
                 .icon(BitmapFromVector(getActivity().getApplicationContext(), R.drawable.ic_flag)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(loc3));
+
+
     }
 
     private BitmapDescriptor BitmapFromVector(Context context, int vectorResId) {

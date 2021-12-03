@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#a0522d">
+    android:background="#a0522d"
 
+    tools:context=".InfomationFragment">
 
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</ScrollView>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="262dp"
+            android:layout_height="71dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Information"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <Button
+            android:id="@+id/btn_whattorecycle"
+            android:layout_width="304dp"
+            android:layout_height="56dp"
+            android:text="Not Sure What to Recycle?"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <Button
+            android:id="@+id/btn_recyclabletype"
+            android:layout_width="304dp"
+            android:layout_height="56dp"
+            android:text="Recyclables and Non-Recyclables"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="297dp" />
+
+        <Button
+            android:id="@+id/btn_benefits"
+            android:layout_width="304dp"
+            android:layout_height="56dp"
+            android:text="Benefits of Recycling"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="392dp" />
+
+        <Button
+            android:id="@+id/btn_facts"
+            android:layout_width="304dp"
+            android:layout_height="56dp"
+            android:text="Facts about Recycling"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="482dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

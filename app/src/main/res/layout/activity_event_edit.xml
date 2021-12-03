@@ -39,23 +39,22 @@
         android:textColor="@color/black"/>
 
     <Button
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:onClick="saveEventAction"
         android:text="Save"
         android:textColor="@color/purple_200"
-        android:background="@null"
-        android:textStyle="bold"
-        android:onClick="saveEventAction"
-        android:layout_gravity="center"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/menu"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/addLabel">
+        android:layout_height="wrap_content">
 
         <AutoCompleteTextView
             android:id="@+id/label"
@@ -66,7 +65,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+    <!--<TextView
         android:id="@+id/text_view"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -102,7 +101,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Weight" />/>
-    </com.google.android.material.chip.ChipGroup>
+    </com.google.android.material.chip.ChipGroup>-->
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Label To ListView" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn" />
 
 
 </LinearLayout>

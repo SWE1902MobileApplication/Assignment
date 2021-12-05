@@ -20,6 +20,10 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -105,8 +109,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Log.w(TAG, "createUserWithEmailAndPassword:success", task.getException());
                     Toast.makeText(RegisterActivity.this, "Register success.",
                     Toast.LENGTH_SHORT).show();
-                    //TODO store user info, init user records
-                    finishActivity(0);
+                    storeUserDetails(first, last, email);
                 }else{
                     Log.w(TAG, "createUserWithEmailAndPassword:failure", task.getException());
                     Toast.makeText(RegisterActivity.this, "Register failed.",
@@ -123,6 +126,23 @@ public class RegisterActivity extends AppCompatActivity {
                         regEmail.requestFocus();
                     }
                 }
+            }
+        });
+    }
+
+    private void storeUserDetails(String fname, String lname, String email){
+        Map<String, String> m = new HashMap<>();
+        m.put("fname", fname);
+        m.put("lname", lname);
+        FirebaseFirestore.getInstance().collection("user").document(email).set(m).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if(task.isSuccessful()){
+                    Toast.makeText(RegisterActivity.this, "Successfully created user profile", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(RegisterActivity.this, "Failed to create user profile", Toast.LENGTH_SHORT).show();
+                }
+                finish();
             }
         });
     }

@@ -52,6 +52,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
             }
         });
+
+
+
+        //TODO remove
+        Button testdbbtn = findViewById(R.id.testdbbtn);
+        testdbbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseHelper d = new DatabaseHelper();
+                d.test();
+            }
+        });
     }
 
     private void updateText() {

@@ -29,7 +29,6 @@ import java.util.List;
 public class EventEditActivity extends AppCompatActivity
 {
     private EditText eventNameET;
-    private TextView eventDateTV;
     CalendarUtils cu;
     Chip chip1,chip2;
 
@@ -122,8 +121,7 @@ public class EventEditActivity extends AppCompatActivity
         String eventName = eventNameET.getText().toString();
         Event newEvent = new Event(eventName, cu.selectedDate);
         Event.eventsList.add(newEvent);
-        //startActivity(new Intent(EventEditActivity.this, .class));
-        finish();
+        startActivity(new Intent(this, BackyardActivity.class));
     }
 
 }

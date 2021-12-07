@@ -56,10 +56,10 @@ public class HomeActivity extends AppCompatActivity {
                     selectedFragment = new HomeFragment();
                     id = 2;
                     break;
-                case R.id.navigation_backyard:
+                /*case R.id.navigation_backyard:
                     selectedFragment = new CalendarActivity();
                     id = 3;
-                    break;
+                    break;*/
                 case R.id.navigation_profile:
                     selectedFragment = new ProfileFragment();
                     id = 4;

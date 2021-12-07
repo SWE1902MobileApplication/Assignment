@@ -67,5 +67,21 @@ public class BackyardActivity extends AppCompatActivity {
 
         return percentage;
     }
+    private float Addition(float paperWeight, float canWeight, float glassWeight){
+        paperWeight = paperWeight * 0.017f;
+
+        float total = paperWeight + canWeight + glassWeight;
+
+        return total;
+    }
+
+    private float Calculation(float totalweight){
+        //Every 1000kg of recycled paper can save 17 trees
+        //The percentage of the user recycled weight = (total weight x (17/1000)) x 100%
+        float percentage = (totalweight * 100);
+
+        return percentage;
+    }
+
 }
 

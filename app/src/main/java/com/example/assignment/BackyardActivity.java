@@ -17,7 +17,7 @@ public class BackyardActivity extends AppCompatActivity {
 
     double paperWeight = 0;
     double glassWeight = 0;
-    double yadayadaWeight = 0;
+    double canWeight = 0;
 
     TextView loadingText;
     TextView displayText;
@@ -37,7 +37,7 @@ public class BackyardActivity extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 paperWeight = documentSnapshot.getDouble("paper");
                 glassWeight = documentSnapshot.getDouble("glass");
-                yadayadaWeight = documentSnapshot.getDouble("yadayada");
+                canWeight = documentSnapshot.getDouble("can");
                 updateTreeProgression();
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -63,7 +63,7 @@ public class BackyardActivity extends AppCompatActivity {
         //Every 1000kg of recycled paper can save 17 trees
         //The percentage of the user recycled weight = (total weight x (17/1000)) x 100%
         double percentage = (paperWeight * 0.017f * 100);
-        //TODO ls yadayadayada...
+
 
         return percentage;
     }

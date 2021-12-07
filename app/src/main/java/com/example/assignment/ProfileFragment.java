@@ -316,7 +316,7 @@ public class ProfileFragment extends Fragment {
     private void updateInput() {
         fn = fnameText.getText().toString();
         ln = lnameText.getText().toString();
-        if(email == emailText.getText().toString()){
+        if(email.equals(emailText.getText().toString())){
             emailChanged = false;
         }else {
             email = emailText.getText().toString();

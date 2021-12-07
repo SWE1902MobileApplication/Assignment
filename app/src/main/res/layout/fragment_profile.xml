@@ -25,11 +25,11 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:text="First Name" />
+
         <EditText
             android:id="@+id/profFirst"
             android:hint="First name..."
-            android:inputType="textPersonName"
-            />
+            android:inputType="textPersonName" />
     </TableRow>
 
     <TableRow>
@@ -39,11 +39,11 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:text="Last Name" />
+
         <EditText
             android:id="@+id/profLast"
             android:hint="Last name..."
-            android:inputType="textPersonName"
-            />
+            android:inputType="textPersonName" />
 
     </TableRow>
 
@@ -56,11 +56,11 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:text="E-mail Address" />
+
         <EditText
             android:id="@+id/profEmail"
             android:hint="Email..."
-            android:inputType="textEmailAddress"
-            />
+            android:inputType="textEmailAddress" />
     </TableRow>
 
     <TableRow
@@ -72,12 +72,62 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:text="Password" />
-        <EditText
-            android:id="@+id/profPwd"
-            android:hint="*****"
-            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/profileChangePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="Change Password" />
     </TableRow>
 
+    <TableRow>
+        <TextView
+            android:id="@+id/profHide1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="Current Password"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/profCurrPass"
+            android:hint="******"
+            android:inputType="textPassword"
+            android:visibility="gone"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/profHide2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="New Password"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/profNewPass"
+            android:hint="******"
+            android:inputType="textPassword"
+            android:visibility="gone"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/profHide3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="Confirm Password"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/profPassConf"
+            android:hint="******"
+            android:inputType="textPassword"
+            android:visibility="gone"/>
+    </TableRow>
 
     <TableRow
         android:layout_width="fill_parent"
@@ -95,12 +145,29 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btnProfile"
+            android:id="@+id/profileEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
             android:text="EDIT" />
 
     </TableRow>
+
+    <TableRow
+        android:layout_width="257dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/profError"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_span="3"
+            android:text="Loading user profile..."
+            android:textAlignment="viewStart"
+            android:textSize="20dp" />
+
+
+    </TableRow>
+
 
 </TableLayout>

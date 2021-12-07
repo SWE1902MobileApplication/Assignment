@@ -56,14 +56,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         //TODO remove
-        Button testdbbtn = findViewById(R.id.testdbbtn);
+        /*Button testdbbtn = findViewById(R.id.testdbbtn);
         testdbbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatabaseHelper d = new DatabaseHelper();
-                d.test();
+                FirebaseAuth.getInstance().signInWithEmailAndPassword("DDD@ddd.ddd", "dddddd").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        ((Global) getApplication()).setAuth(task.getResult().getUser());
+                        startActivity(new Intent(MainActivity.this, BackyardActivity.class));
+                    }
+                });
             }
-        });
+        });*/
     }
 
     private void updateText() {
@@ -86,15 +91,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loginUser() {
-        FirebaseAuth auth = FirebaseAuth.getInstance();
-
-        auth.signInWithEmailAndPassword(email, pass)
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Log.d(TAG, "signInWithEmail:success");
-                            ((Global) getApplication()).setAuth(auth);
+                            ((Global) getApplication()).setAuth(task.getResult().getUser());
                             //startActivity(new Intent(MainActivity.this, MapFragment.class));
                             startActivity(new Intent(MainActivity.this, HomeActivity.class));
                             //startActivity(new Intent(MainActivity.this, CalendarActivity.class));

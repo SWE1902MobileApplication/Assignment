@@ -109,7 +109,7 @@ public class RegisterActivity extends AppCompatActivity {
                     Log.w(TAG, "createUserWithEmailAndPassword:success", task.getException());
                     Toast.makeText(RegisterActivity.this, "Register success.",
                     Toast.LENGTH_SHORT).show();
-                    storeUserDetails(first, last, email);
+                    storeUserDetails(task.getResult().getUser().getUid(), first, last, email);
                 }else{
                     Log.w(TAG, "createUserWithEmailAndPassword:failure", task.getException());
                     Toast.makeText(RegisterActivity.this, "Register failed.",
@@ -130,11 +130,15 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
-    private void storeUserDetails(String fname, String lname, String email){
-        Map<String, String> m = new HashMap<>();
+    private void storeUserDetails(String Uid, String fname, String lname, String email){
+        //FIXME if list of field changed
+        Map<String, Object> m = new HashMap<>();
         m.put("fname", fname);
         m.put("lname", lname);
-        FirebaseFirestore.getInstance().collection("user").document(email).set(m).addOnCompleteListener(new OnCompleteListener<Void>() {
+        m.put("paper", 0);
+        m.put("glass", 0);
+        m.put("can", 0);
+        FirebaseFirestore.getInstance().collection("user").document(Uid).set(m).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){

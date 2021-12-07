@@ -14,6 +14,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+//TODO get percentage of tree progression
 
 public class BackyardActivity extends AppCompatActivity {
 

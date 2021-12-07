@@ -13,4 +13,17 @@
     <string name="forward"><![CDATA[->]]></string>
     <string name="addLabel">addLabel</string>
     <string name="addWeight">addWeight</string>
+
+
+        <string-array name="RecycleItem_array">
+            <item>Paper</item>
+            <item>Can</item>
+            <item>Earth</item>
+            <item>Mars</item>
+            <item>Jupiter</item>
+            <item>Saturn</item>
+            <item>Uranus</item>
+            <item>Neptune</item>
+        </string-array>
+
 </resources>

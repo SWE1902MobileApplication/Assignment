@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_backyard.xml" value="0.264" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_bottom_navi.xml" value="0.264" />
+        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_event_edit.xml" value="0.1" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_information.xml" value="0.11041666666666666" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_main.xml" value="0.152" />
@@ -13,8 +15,10 @@
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_test.xml" value="0.264" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/fragment_home.xml" value="0.176" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/fragment_map.xml" value="0.25" />
+        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/fragment_profile.xml" value="0.3242320819112628" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/drawable/ic_flag.xml" value="0.2203125" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_event_edit.xml" value="0.22" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_information.xml" value="0.19322916666666667" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_login.xml" value="0.5" />
@@ -33,20 +37,9 @@
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/drawable/tree_animation.xml" value="0.17447916666666666" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_backyard.xml" value="0.12817028985507245" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_event_edit.xml" value="0.4" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_navi.xml" value="0.176" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/animation.xml" value="0.15833333333333333" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_backyard.xml" value="0.15520833333333334" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_infomation.xml" value="0.17864583333333334" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_map.xml" value="0.17864583333333334" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_recyclabletypes.xml" value="0.17864583333333334" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_whattorecycle.xml" value="0.17864583333333334" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17864583333333334" />
       </map>
     </option>
   </component>

@@ -66,7 +66,6 @@ public class HomeActivity extends AppCompatActivity {
                     break;
             }
             bottomNav.getMenu().getItem(id).setChecked(true);
-            // TODO first fragment
             getSupportFragmentManager().beginTransaction().replace(R.id.frag_container,selectedFragment).commit();
             //id fragment_container???
             return false;

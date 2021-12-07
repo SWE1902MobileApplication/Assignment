@@ -24,7 +24,10 @@ import java.util.List;
 //TODO after user click the save button, the list of items will be saved and update in database
 //TODO save user tree progression
 
-
+//TODO add a button to remove from list
+//TODO amount?
+//TODO why there are earth and venus and things? I can recycle planets???
+//FIXME no matter what you choose in list, paper and can will both be added
 
 public class EventEditActivity extends AppCompatActivity
 {
@@ -32,6 +35,11 @@ public class EventEditActivity extends AppCompatActivity
     private TextView eventDateTV;
     CalendarUtils cu;
     Chip chip1,chip2;
+
+    //TODO if there is more
+    double paperWeight = 0;
+    double glassWeight = 0;
+    double yadayadaWeight = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

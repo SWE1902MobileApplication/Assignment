@@ -3,18 +3,19 @@ package com.example.assignment;
 import android.app.Application;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Global extends Application {
-    private FirebaseAuth auth;
+    private FirebaseUser user;
     private CalendarUtils util;
 
-    public FirebaseAuth getLoginUser() {
-        return auth;
+    public FirebaseUser getLoginUser() {
+        return user;
     }
     public CalendarUtils getUtil() { return util; }
 
-    public void setAuth(FirebaseAuth auth) {
-        this.auth = auth;
+    public void setAuth(FirebaseUser user) {
+        this.user = user;
     }
     public void setUtil(CalendarUtils util){ this.util = util;}
 

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import com.example.assignment.CalendarUtils;
 import com.google.android.material.chip.Chip;
 
-/*public class CalendarActivity extends Fragment implements CalendarAdapter.OnItemListener
+public class CalendarActivity extends Fragment implements CalendarAdapter.OnItemListener
 {
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
@@ -97,4 +97,3 @@ import com.google.android.material.chip.Chip;
         startActivity(new Intent(getContext(), EventEditActivity.class));
     }
 }
-*/

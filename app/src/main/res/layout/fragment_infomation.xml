@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#a0522d"
-
     tools:context=".InfomationFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FAD59F">
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="262dp"
-            android:layout_height="71dp"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="Information"
+            android:id="@+id/textView9"
+            android:layout_width="254dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="35dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="Welcome to Go Green Go"
             android:textAlignment="center"
+            android:textColor="#000000"
             android:textSize="48sp"
-            tools:layout_editor_absoluteX="82dp"
-            tools:layout_editor_absoluteY="80dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btn_whattorecycle"
@@ -57,4 +65,4 @@
             tools:layout_editor_absoluteY="481dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</RelativeLayout>
+</FrameLayout>

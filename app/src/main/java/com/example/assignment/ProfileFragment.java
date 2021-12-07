@@ -46,6 +46,7 @@ public class ProfileFragment extends Fragment {
         return fragment;
     }
 
+    //TODO get user FN,LN, Email and Password
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

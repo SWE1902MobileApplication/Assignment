@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.google.android.material.chip.Chip;
 
-public class EventEditActivity extends AppCompatActivity
+/*public class EventEditActivity extends AppCompatActivity
 {
     private EditText eventNameET;
     private TextView eventDateTV;
@@ -81,3 +81,5 @@ public class EventEditActivity extends AppCompatActivity
     }
 
 }
+
+*/

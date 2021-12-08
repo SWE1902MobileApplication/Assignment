@@ -52,44 +52,29 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         return view;
     }
 
-
-
-
-
-
-
-
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
         MapsInitializer.initialize( getContext() );
         mMap = googleMap;
-
         mMap.setMyLocationEnabled(true);
-        LatLng coffeys = new LatLng( 54.572720, -5.959151 );
-        mMap.addMarker( new MarkerOptions().position( coffeys ).title( "Coffey's Butchers" ) );
-        mMap.moveCamera( CameraUpdateFactory.newLatLngZoom( coffeys, 12 ) );
 
         // Add a marker in a location and move the camera
-        LatLng loc1 = new LatLng(3.1281627946385404, 101.59842635254633);
-        mMap.addMarker(new MarkerOptions().position(loc1).title("Marker in loc1")
+        LatLng loc1 = new LatLng(3.10930, 101.59357);
+        mMap.addMarker(new MarkerOptions().position(loc1).title("Recycle Station A")
                 // below line is use to add custom marker on our map.
-                .icon(BitmapFromVector(getActivity().getApplicationContext(), R.drawable.ic_flag)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(loc1));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
 
         // Add a marker in a location and move the camera
-        LatLng loc2 = new LatLng(3.1210986014141002, 101.60200933298778);
-        mMap.addMarker(new MarkerOptions().position(loc2).title("Marker in loc2")
+        LatLng loc2 = new LatLng(3.10156, 101.61492);
+        mMap.addMarker(new MarkerOptions().position(loc2).title("Recycle Station B")
                 // below line is use to add custom marker on our map.
-                .icon(BitmapFromVector(getActivity().getApplicationContext(), R.drawable.ic_flag)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(loc2));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
 
         // Add a marker in a location and move the camera
         LatLng loc3 = new LatLng(3.120903672634574, 101.59665254297104);
-        mMap.addMarker(new MarkerOptions().position(loc3).title("Marker in loc3")
+        mMap.addMarker(new MarkerOptions().position(loc3).title("Recycle Station C")
                 // below line is use to add custom marker on our map.
-                .icon(BitmapFromVector(getActivity().getApplicationContext(), R.drawable.ic_flag)));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(loc3));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
     }
 
     private final LocationListener locationListener = new LocationListener() {
@@ -155,6 +140,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         }
     }
 
+
+    /*
     private BitmapDescriptor BitmapFromVector(Context context, int vectorResId) {
         // below line is use to generate a drawable.
         Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorResId);
@@ -175,6 +162,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
         // after generating our bitmap we are returning our bitmap.
         return BitmapDescriptorFactory.fromBitmap(bitmap);
-    }
+    } */
 
 }

@@ -53,11 +53,11 @@ public class EventEditActivity extends AppCompatActivity
 
         };
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        /*ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_dropdown_item_1line, LABEL);
         AutoCompleteTextView textView = (AutoCompleteTextView)
                 findViewById(R.id.label);
-        textView.setAdapter(adapter);
+        textView.setAdapter(adapter);*/
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout

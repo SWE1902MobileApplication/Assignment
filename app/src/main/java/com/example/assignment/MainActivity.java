@@ -56,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         //TODO remove
-        /*Button testdbbtn = findViewById(R.id.testdbbtn);
+        Button testdbbtn = findViewById(R.id.testdbbtn);
         testdbbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseAuth.getInstance().signInWithEmailAndPassword("DDD@ddd.ddd", "dddddd").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                FirebaseAuth.getInstance().signInWithEmailAndPassword("AAA@aaa.aaa", "aaaaaa").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         ((Global) getApplication()).setAuth(task.getResult().getUser());
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
-        });*/
+        });
     }
 
     private void updateText() {

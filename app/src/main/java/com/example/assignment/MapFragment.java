@@ -66,29 +66,30 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         mMap = googleMap;
 
         mMap.setMyLocationEnabled(true);
-        LatLng coffeys = new LatLng( 54.572720, -5.959151 );
-        mMap.addMarker( new MarkerOptions().position( coffeys ).title( "Coffey's Butchers" ) );
-        mMap.moveCamera( CameraUpdateFactory.newLatLngZoom( coffeys, 12 ) );
+        //if location permission is not allowed, locate this instead
+        LatLng temp = new LatLng( 54.572720, -5.959151 );
+        mMap.addMarker( new MarkerOptions().position( temp ).title( "Temporary Location" ) );
+        mMap.moveCamera( CameraUpdateFactory.newLatLngZoom( temp, 12 ) );
 
-        // Add a marker in a location and move the camera
+        // Add a marker in a location
         LatLng loc1 = new LatLng(3.1281627946385404, 101.59842635254633);
         mMap.addMarker(new MarkerOptions().position(loc1).title("Marker in loc1")
                 // below line is use to add custom marker on our map.
-                .icon(BitmapFromVector(getActivity().getApplicationContext(), R.drawable.ic_flag)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.markerloc)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(loc1));
 
-        // Add a marker in a location and move the camera
+        // Add a marker in a location
         LatLng loc2 = new LatLng(3.1210986014141002, 101.60200933298778);
         mMap.addMarker(new MarkerOptions().position(loc2).title("Marker in loc2")
                 // below line is use to add custom marker on our map.
-                .icon(BitmapFromVector(getActivity().getApplicationContext(), R.drawable.ic_flag)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.markerloc)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(loc2));
 
-        // Add a marker in a location and move the camera
+        // Add a marker in a location
         LatLng loc3 = new LatLng(3.120903672634574, 101.59665254297104);
         mMap.addMarker(new MarkerOptions().position(loc3).title("Marker in loc3")
                 // below line is use to add custom marker on our map.
-                .icon(BitmapFromVector(getActivity().getApplicationContext(), R.drawable.ic_flag)));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.markerloc)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(loc3));
     }
 
@@ -153,28 +154,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         {
             return true;
         }
-    }
-
-    private BitmapDescriptor BitmapFromVector(Context context, int vectorResId) {
-        // below line is use to generate a drawable.
-        Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorResId);
-
-        // below line is use to set bounds to our vector drawable.
-        vectorDrawable.setBounds(0, 0, vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight());
-
-        // below line is use to create a bitmap for our
-        // drawable which we have added.
-        Bitmap bitmap = Bitmap.createBitmap(vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
-
-        // below line is use to add bitmap in our canvas.
-        Canvas canvas = new Canvas(bitmap);
-
-        // below line is use to draw our
-        // vector drawable in canvas.
-        vectorDrawable.draw(canvas);
-
-        // after generating our bitmap we are returning our bitmap.
-        return BitmapDescriptorFactory.fromBitmap(bitmap);
     }
 
 }

@@ -46,4 +46,14 @@
         app:layout_constraintBaseline_toTopOf="parent"
         android:layout_marginTop="?attr/actionBarSize"/>
 
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Click to Identify Your Captured Items!"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,334 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@color/lightyellow">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="333dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="46dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="What You Can Recycle?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="65dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="282dp"
+            android:layout_height="156dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="65dp"
+            android:fontFamily="@font/average_sans"
+            android:text="There are a lot of waste products that you can recycle and save the world, but not all of them. In this page, we will learn more on what can we recycle."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="213dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="104dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:srcCompat="@drawable/newspaper" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="224dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="99dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="What can we Recycle?"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="336dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="38dp"
+            android:background="@drawable/borderbox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="218dp"
+            android:layout_height="168dp"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="104dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            app:srcCompat="@drawable/plastic" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="224dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="101dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Paper"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="224dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="101dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Cardboard"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="224dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="101dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Glass"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="224dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="93dp"
+            android:layout_marginEnd="104dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Cartons"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="224dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="101dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Plastic"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="224dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginEnd="101dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Steel and Aluminum"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="293dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginEnd="66dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="such as newspapers, magazines, office papers"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="293dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="66dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="such as bottles, jars"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="293dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginEnd="66dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="such as milk cartons, juice cartons"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="320dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="53dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="such as plastic bags, plastic cups, plastic bottles"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="303dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="59dp"
+            android:layout_marginEnd="59dp"
+            android:background="@drawable/textviewbackground"
+            android:fontFamily="sans-serif-condensed"
+            android:text="such as aluminum tin, aerosol"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="159dp"
+            android:layout_height="164dp"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="133dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:srcCompat="@drawable/f3ada5db7ae5ceab9ee9ced744529aa5" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="161dp"
+            android:layout_height="129dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="132dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:srcCompat="@drawable/PngItem_915811" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="242dp"
+            android:layout_height="148dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="92dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            app:srcCompat="@drawable/iron_bar" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="352dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="194dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="116dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:srcCompat="@drawable/bottle_cooler" />
+
 
         <!-- Have whatever children you want inside -->
 

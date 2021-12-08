@@ -28,28 +28,6 @@
         android:ems="10"
         android:inputType="text"/>
 
-    <!--<com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/menu"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <AutoCompleteTextView
-            android:id="@+id/label"
-            android:hint="@string/addLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none" />
-
-    </com.google.android.material.textfield.TextInputLayout>-->
-
-    <!--<ListView
-        android:id="@+id/lv"
-        android:layout_width="239dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/newListbtn">
-
-    </ListView>-->
     <LinearLayout
         android:id="@+id/newListUnit"
         android:layout_width="match_parent"
@@ -77,48 +55,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add New Label" />
-
-
-    <!--<TextView
-        android:id="@+id/text_view"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Add Weight" />
-
-    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
-        android:id="@+id/number_button"
-        android:layout_width="200dp"
-        app:backGroundColor="@color/colorPrimary"
-        app:textSize="8sp"
-        android:layout_marginTop="18dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/text_view"
-        android:layout_height="wrap_content" />
-
-    <com.google.android.material.chip.ChipGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chipLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="64dp"
-            android:text="Add Label" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chipWeight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Weight" />/>
-    </com.google.android.material.chip.ChipGroup>-->
-
-
-
 
     <Button
         android:layout_width="wrap_content"

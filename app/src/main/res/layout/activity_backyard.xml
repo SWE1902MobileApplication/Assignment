@@ -9,18 +9,14 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp">
 
-    <Spinner
-        android:id="@+id/AddLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true" />
 
     <TextView
         android:id="@+id/byloading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/AddLabel"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
         android:text="Loading..."
         android:textSize="20dp" />
 
@@ -28,10 +24,26 @@
         android:id="@+id/bydisplaytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/AddLabel"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
         android:text=""
         android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/tree1"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </RelativeLayout>

@@ -62,19 +62,24 @@ public class EventEditActivity extends AppCompatActivity
         cu = ((Global) getApplication()).getUtil();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_edit);
-        //TODO remove button
         eventNameET = findViewById(R.id.eventNameET);
+
         ll = findViewById(R.id.evenEditLL);
+
         newUnit = findViewById(R.id.newListUnit);
         llLayoutParam = newUnit.getLayoutParams();
+
         Spinner spinner = findViewById(R.id.spinner);
         SpinnerAdapter adapter = ArrayAdapter.createFromResource(this, R.array.RecycleItem_array, R.layout.support_simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinnerLayoutParams = spinner.getLayoutParams();
+
         et = findViewById(R.id.editTextNumberDecimal);
         etLayoutParam = et.getLayoutParams();
+
         closebtn = findViewById(R.id.deletebtn);
         closebtnLayoutParam = closebtn.getLayoutParams();
+
         Button btn = findViewById(R.id.newListbtn);
 
         closebtn.setOnClickListener(new View.OnClickListener() {
@@ -105,35 +110,8 @@ public class EventEditActivity extends AppCompatActivity
                 newLL.addView(newDelete, closebtnLayoutParam);
 
                 ll.addView(newLL, ll.getChildCount() - 2, llLayoutParam);
-//                notifyDataSetChanged ()
-//                arrayAdapter.notifyDataSetChanged();
             }
         });
-
-
-        /*ElegantNumberButton button = (ElegantNumberButton) findViewById(R.id.number_button);
-        button.setOnClickListener(new ElegantNumberButton.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String num = button.getNumber();
-            }
-        });
-
-        chip1 = findViewById(R.id.chipLabel);
-        chip1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(EventEditActivity.this, "Action Completed", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        chip2 = findViewById(R.id.chipWeight);
-        chip2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(EventEditActivity.this, "Action Completed", Toast.LENGTH_SHORT).show();
-            }
-        });*/
     }
 
     public void saveEventAction(View view)

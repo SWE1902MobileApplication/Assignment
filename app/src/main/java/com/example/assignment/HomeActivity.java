@@ -24,6 +24,8 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         bottomNav=findViewById(R.id.nav_view);
         bottomNav.setOnItemSelectedListener(navListener);
+        bottomNav.getMenu().getItem(2).setChecked(true);
+        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container,new HomeFragment()).commit();
 
         nnBtn = findViewById(R.id.nnBtn);
         nnBtn.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +69,6 @@ public class HomeActivity extends AppCompatActivity {
             }
             bottomNav.getMenu().getItem(id).setChecked(true);
             getSupportFragmentManager().beginTransaction().replace(R.id.frag_container,selectedFragment).commit();
-            //id fragment_container???
             return false;
         }
     };

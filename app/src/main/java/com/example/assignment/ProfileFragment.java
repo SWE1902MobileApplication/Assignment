@@ -127,7 +127,8 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        FirebaseFirestore.getInstance().collection("user").document(((Global)getActivity().getApplication()).getLoginUser().getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+        FirebaseFirestore.getInstance().collection("user").document(((Global)getActivity().getApplication()).
+                getLoginUser().getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 email = ((Global)getActivity().getApplication()).getLoginUser().getEmail();
@@ -156,10 +157,12 @@ public class ProfileFragment extends Fragment {
             public void onClick(View v) {
                 updatePwds();
                 if(validatePwds()){
-                    ((Global)getActivity().getApplication()).getLoginUser().reauthenticate(EmailAuthProvider.getCredential(email, currPass)).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    ((Global)getActivity().getApplication()).getLoginUser().reauthenticate(EmailAuthProvider
+                            .getCredential(email, currPass)).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void unused) {
-                            ((Global)getActivity().getApplication()).getLoginUser().updatePassword(newPass).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            ((Global)getActivity().getApplication()).getLoginUser()
+                                    .updatePassword(newPass).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
                                     unsetPasswordChangeMode();
@@ -280,7 +283,9 @@ public class ProfileFragment extends Fragment {
                     Map<String, Object> map= new HashMap<>();
                     map.put("fname", fn);
                     map.put("lname", ln);
-                    FirebaseFirestore.getInstance().collection("user").document(((Global)getActivity().getApplication()).getLoginUser().getUid()).update(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    FirebaseFirestore.getInstance().collection("user").document(((Global)
+                            getActivity().getApplication()).getLoginUser().getUid()).update(map)
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void unused) {
                             displayProfile();
@@ -294,7 +299,8 @@ public class ProfileFragment extends Fragment {
                         }
                     });
                     if(emailChanged){
-                        ((Global)getActivity().getApplication()).getLoginUser().updateEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        ((Global)getActivity().getApplication()).getLoginUser()
+                                .updateEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
                                 errorText.setText(errorText.getText() + "\nEmail changed: login with new email next time");

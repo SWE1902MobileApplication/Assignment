@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:outlineAmbientShadowColor="#FFFFFF"
     android:outlineSpotShadowColor="#FFFFFF"
-    android:background="#ffbb34"
+    android:background="@color/lightyellow"
     tools:context=".MainActivity">
 
     <TextView
@@ -73,12 +73,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/testdbbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="testdbbtn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

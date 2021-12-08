@@ -73,21 +73,21 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
         // Add a marker in a location
         LatLng loc1 = new LatLng(3.1281627946385404, 101.59842635254633);
-        mMap.addMarker(new MarkerOptions().position(loc1).title("Marker in loc1")
+        mMap.addMarker(new MarkerOptions().position(loc1).title("Station A")
                 // below line is use to add custom marker on our map.
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.markerloc)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(loc1));
 
         // Add a marker in a location
         LatLng loc2 = new LatLng(3.1210986014141002, 101.60200933298778);
-        mMap.addMarker(new MarkerOptions().position(loc2).title("Marker in loc2")
+        mMap.addMarker(new MarkerOptions().position(loc2).title("Station B")
                 // below line is use to add custom marker on our map.
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.markerloc)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(loc2));
 
         // Add a marker in a location
         LatLng loc3 = new LatLng(3.120903672634574, 101.59665254297104);
-        mMap.addMarker(new MarkerOptions().position(loc3).title("Marker in loc3")
+        mMap.addMarker(new MarkerOptions().position(loc3).title("Station C")
                 // below line is use to add custom marker on our map.
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.markerloc)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(loc3));

@@ -84,7 +84,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
             if (location == null) {
                 return;
             }
-
             Double lat = location.getLatitude();
             Double lng = location.getLongitude();
 
@@ -114,8 +113,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                 Manifest.permission.ACCESS_FINE_LOCATION )
                 != PackageManager.PERMISSION_GRANTED)
         {
-
-
             // Asking user if explanation is needed
             if (ActivityCompat.shouldShowRequestPermissionRationale( getActivity(),
                     Manifest.permission.ACCESS_FINE_LOCATION ))
@@ -123,14 +120,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                 //Prompt the user once explanation has been shown
                 requestPermissions( new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST_CODE
                 );
-
-
-
             } else {
                 // No explanation needed, we can request the permission.
                 requestPermissions( new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                         LOCATION_PERMISSION_REQUEST_CODE );
-
             }
             return false;
         }
@@ -140,28 +133,5 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         }
     }
 
-
-    /*
-    private BitmapDescriptor BitmapFromVector(Context context, int vectorResId) {
-        // below line is use to generate a drawable.
-        Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorResId);
-
-        // below line is use to set bounds to our vector drawable.
-        vectorDrawable.setBounds(0, 0, vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight());
-
-        // below line is use to create a bitmap for our
-        // drawable which we have added.
-        Bitmap bitmap = Bitmap.createBitmap(vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
-
-        // below line is use to add bitmap in our canvas.
-        Canvas canvas = new Canvas(bitmap);
-
-        // below line is use to draw our
-        // vector drawable in canvas.
-        vectorDrawable.draw(canvas);
-
-        // after generating our bitmap we are returning our bitmap.
-        return BitmapDescriptorFactory.fromBitmap(bitmap);
-    } */
 
 }

@@ -1,84 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:layout_editor_absoluteX="0dp"
+tools:layout_editor_absoluteY="0dp"
+android:fillViewport="true"
+tools:context=".BenefitsFragment">
+
+<!-- TODO: Update blank fragment layout -->
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BenefitsFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/lightyellow">
+    android:background="@color/lightyellow">
 
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="372dp"
-            android:layout_height="61dp"
-            android:layout_marginStart="69dp"
-            android:layout_marginTop="67dp"
-            android:layout_marginEnd="69dp"
-            android:fontFamily="@font/bubblegum_sans"
-            android:text="Benefits of Recycling"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="48sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="372dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="69dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Benefits of Recycling"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="336dp"
-            android:layout_height="5dp"
-            android:background="@drawable/borderbox"
-            tools:layout_editor_absoluteX="37dp"
-            tools:layout_editor_absoluteY="262dp" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="283dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/average_sans"
+        android:text="It is true that we can get benefits from doing anything, but do you know the same concept also applies to recycling? In this page, we will look into what are the benefits of recycling!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="151dp" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="336dp"
-            android:layout_height="152dp"
-            android:background="@drawable/borderbox"
-            tools:layout_editor_absoluteX="37dp"
-            tools:layout_editor_absoluteY="422dp" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="336dp"
+        android:layout_height="5dp"
+        android:background="@drawable/borderbox"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="346dp" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="148dp"
-            android:layout_height="25dp"
-            android:background="@drawable/textviewbackground"
-            android:fontFamily="@font/bubblegum_sans"
-            android:text="Who are We?"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="131dp"
-            tools:layout_editor_absoluteY="222dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="99dp"
+        android:background="@drawable/textviewbackground"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="What are the Benefits?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="148dp"
-            android:layout_height="34dp"
-            android:background="@drawable/textviewbackground"
-            android:fontFamily="@font/bubblegum_sans"
-            android:text="Why Recycle?"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            tools:layout_editor_absoluteX="131dp"
-            tools:layout_editor_absoluteY="411dp" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="324dp"
+        android:layout_height="39dp"
+        android:background="@drawable/textviewbackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="1: It reduces the amount of waste sent to landfills."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="546dp" />
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="315dp"
-            android:layout_height="114dp"
-            android:text="We are from LOKA, and welcome to our first application!"
-            tools:layout_editor_absoluteX="48dp"
-            tools:layout_editor_absoluteY="323dp" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="324dp"
+        android:layout_height="39dp"
+        android:background="@drawable/textviewbackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="2. Conserves natural resources"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="758dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="324dp"
+        android:layout_height="39dp"
+        android:background="@drawable/textviewbackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="3. Increases economic security by tapping a domestic source of materials"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="952dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="324dp"
+        android:layout_height="39dp"
+        android:background="@drawable/textviewbackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="4. Prevents pollution by reducing the need to collect new raw materials"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="1146dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="324dp"
+        android:layout_height="39dp"
+        android:background="@drawable/textviewbackground"
+        android:fontFamily="sans-serif-condensed"
+        android:text="5. Saves energy"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="1244dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="233dp"
+        android:layout_height="175dp"
+        android:src="@drawable/land"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="371dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="209dp"
+        android:layout_height="151dp"
+        android:src="@drawable/natural"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="607dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="212dp"
+        android:layout_height="134dp"
+        android:src="@drawable/economic"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="818dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

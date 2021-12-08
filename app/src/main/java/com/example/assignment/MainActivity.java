@@ -52,23 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RegisterActivity.class));
             }
         });
-
-
-
-        //TODO remove
-        Button testdbbtn = findViewById(R.id.testdbbtn);
-        testdbbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signInWithEmailAndPassword("aaa@aaa.aaa", "aaaaaa").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        ((Global) getApplication()).setAuth(task.getResult().getUser());
-                        startActivity(new Intent(MainActivity.this, CalendarActivity.class));
-                    }
-                });
-            }
-        });
     }
 
     private void updateText() {
@@ -98,10 +81,7 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Log.d(TAG, "signInWithEmail:success");
                             ((Global) getApplication()).setAuth(task.getResult().getUser());
-                            //startActivity(new Intent(MainActivity.this, MapFragment.class));
                             startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                            //startActivity(new Intent(MainActivity.this, CalendarActivity.class));
-                            //startActivity(new Intent(MainActivity.this, TestActivity.class));
                         } else {
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",

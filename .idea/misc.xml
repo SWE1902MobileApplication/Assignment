@@ -3,12 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidSDK/platforms/android-31/data/res/layout/simple_dropdown_item_1line.xml" value="0.11041666666666666" />
-        <entry key="..\:/AndroidSDK/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.11041666666666666" />
-        <entry key="..\:/AndroidSDK/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.11041666666666666" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_backyard.xml" value="0.264" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_bottom_navi.xml" value="0.264" />
-        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_event_edit.xml" value="0.264" />
+        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_event_edit.xml" value="0.1" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_information.xml" value="0.11041666666666666" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/activity_main.xml" value="0.152" />
@@ -19,11 +16,13 @@
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/fragment_home.xml" value="0.176" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/fragment_map.xml" value="0.25" />
         <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/fragment_profile.xml" value="0.3242320819112628" />
-        <entry key="..\:/Mobile/Assignment/app/src/main/res/layout/fragment_recyclabletypes.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/drawable/borderbox.xml" value="0.19814814814814816" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/drawable/ic_flag.xml" value="0.2203125" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/drawable/textviewbackground.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_calendar.xml" value="0.25" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_event_edit.xml" value="0.22" />
-        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_home.xml" value="0.3798828125" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_information.xml" value="0.19322916666666667" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -33,20 +32,37 @@
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_test.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_user_login.xml" value="0.19322916666666667" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_backyard.xml" value="0.1953125" />
-        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_benefits.xml" value="0.25407608695652173" />
-        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_facts.xml" value="0.28125" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_benefits.xml" value="0.12" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_home.xml" value="0.33" />
-        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_infomation.xml" value="0.25" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_infomation.xml" value="0.22546728971962618" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_map.xml" value="0.1953125" />
-        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
-        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_recyclabletypes.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_recyclabletypes.xml" value="0.22920065252854813" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_whattorecycle.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/Maike/AndroidStudioProjects/Assignment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.159375" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/drawable/ic_flag.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/drawable/tree_animation.xml" value="0.17447916666666666" />
-        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_backyard.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_backyard.xml" value="0.2" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_calendar.xml" value="0.1265625" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_event_edit.xml" value="0.4" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_information.xml" value="0.21510416666666668" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_navi.xml" value="0.176" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/activity_test.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/animation.xml" value="0.15833333333333333" />
         <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_backyard.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_benefits.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_facts.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_infomation.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_map.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_recyclabletypes.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/layout/fragment_whattorecycle.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/Shien/AndroidStudioProjects/Assignment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17864583333333334" />
       </map>
     </option>
   </component>

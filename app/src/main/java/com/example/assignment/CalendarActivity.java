@@ -39,6 +39,18 @@ public class CalendarActivity extends Fragment implements CalendarAdapter.OnItem
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
         initWidgets();
         setMonthView();
+        view.findViewById(R.id.prev).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                previousMonthAction(view);
+            }
+        });
+        view.findViewById(R.id.next).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nextMonthAction(view);
+            }
+        });
     }
 
     private void initWidgets()

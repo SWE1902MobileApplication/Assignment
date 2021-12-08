@@ -20,19 +20,6 @@ public class Event
         return events;
     }
 
-    public static ArrayList<Event> eventsForDateAndTime(LocalDate date)
-    {
-        ArrayList<Event> events = new ArrayList<>();
-
-        for(Event event : eventsList)
-        {
-            events.add(event);
-        }
-
-        return events;
-    }
-
-
     private String name;
     private LocalDate date;
 
@@ -57,9 +44,5 @@ public class Event
         return date;
     }
 
-    public void setDate(LocalDate date)
-    {
-        this.date = date;
-    }
 
 }

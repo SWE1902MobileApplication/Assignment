@@ -193,8 +193,13 @@ tools:context=".BenefitsFragment">
         android:id="@+id/textView28"
         android:layout_width="347dp"
         android:layout_height="74dp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="1201dp" />
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

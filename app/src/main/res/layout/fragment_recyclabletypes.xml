@@ -164,7 +164,7 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            tools:layout_editor_absoluteY="1196dp" />
 
         <TextView
             android:id="@+id/textView19"
@@ -292,18 +292,6 @@
             app:srcCompat="@drawable/f3ada5db7ae5ceab9ee9ced744529aa5" />
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="161dp"
-            android:layout_height="129dp"
-            android:layout_marginStart="128dp"
-            android:layout_marginTop="34dp"
-            android:layout_marginEnd="132dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
-            app:srcCompat="@drawable/PngItem_915811" />
-
-        <ImageView
             android:id="@+id/imageView6"
             android:layout_width="242dp"
             android:layout_height="148dp"
@@ -340,6 +328,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView14"
             app:srcCompat="@drawable/bottle_cooler" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="176dp"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/pngitem915811"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="1059dp" />
 
 
         <!-- Have whatever children you want inside -->

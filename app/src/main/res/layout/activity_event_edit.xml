@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/evenEditLL"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -27,15 +28,55 @@
         android:ems="10"
         android:inputType="text"/>
 
+    <!--<com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/label"
+            android:hint="@string/addLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--<ListView
+        android:id="@+id/lv"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newListbtn">
+
+    </ListView>-->
+    <LinearLayout
+        android:id="@+id/newListUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+        <ImageButton
+            android:id="@+id/deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close_24"/>
+    </LinearLayout>
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/newListbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add New Label To ListView" />
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        android:text="Add New Label" />
 
 
     <!--<TextView
@@ -78,13 +119,6 @@
 
 
 
-    <ListView
-        android:id="@+id/lv"
-        android:layout_width="239dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn">
-
-    </ListView>
 
     <Button
         android:layout_width="wrap_content"

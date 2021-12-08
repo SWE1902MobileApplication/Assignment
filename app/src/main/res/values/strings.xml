@@ -17,13 +17,8 @@
 
         <string-array name="RecycleItem_array">
             <item>Paper</item>
+            <item>Glass</item>
             <item>Can</item>
-            <item>Earth</item>
-            <item>Mars</item>
-            <item>Jupiter</item>
-            <item>Saturn</item>
-            <item>Uranus</item>
-            <item>Neptune</item>
         </string-array>
 
 </resources>

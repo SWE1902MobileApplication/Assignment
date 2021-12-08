@@ -135,9 +135,7 @@ public class RegisterActivity extends AppCompatActivity {
         Map<String, Object> m = new HashMap<>();
         m.put("fname", fname);
         m.put("lname", lname);
-        m.put("paper", 0);
-        m.put("glass", 0);
-        m.put("can", 0);
+
         FirebaseFirestore.getInstance().collection("user").document(Uid).set(m).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {

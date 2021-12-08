@@ -60,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
         testdbbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseAuth.getInstance().signInWithEmailAndPassword("AAA@aaa.aaa", "aaaaaa").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                FirebaseAuth.getInstance().signInWithEmailAndPassword("aaa@aaa.aaa", "aaaaaa").addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         ((Global) getApplication()).setAuth(task.getResult().getUser());
-                        startActivity(new Intent(MainActivity.this, BackyardActivity.class));
+                        startActivity(new Intent(MainActivity.this, CalendarActivity.class));
                     }
                 });
             }

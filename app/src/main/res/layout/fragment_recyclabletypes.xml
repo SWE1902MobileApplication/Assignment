@@ -21,7 +21,6 @@
             android:layout_width="333dp"
             android:layout_height="120dp"
             android:layout_marginStart="46dp"
-            android:layout_marginTop="65dp"
             android:layout_marginEnd="46dp"
             android:fontFamily="@font/bubblegum_sans"
             android:text="What You Can Recycle?"
@@ -30,7 +29,7 @@
             android:textSize="48sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteY="65dp" />
 
         <TextView
             android:id="@+id/textView12"
@@ -156,7 +155,6 @@
             android:layout_width="224dp"
             android:layout_height="28dp"
             android:layout_marginStart="93dp"
-            android:layout_marginTop="2dp"
             android:layout_marginEnd="104dp"
             android:background="@drawable/textviewbackground"
             android:fontFamily="sans-serif-condensed"
@@ -303,7 +301,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView16"
-            app:srcCompat="@drawable/pngitem915811" />
+            app:srcCompat="@drawable/pngitem_915811" />
 
         <ImageView
             android:id="@+id/imageView6"

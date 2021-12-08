@@ -131,13 +131,17 @@ tools:context=".BenefitsFragment">
         android:id="@+id/textView27"
         android:layout_width="320dp"
         android:layout_height="114dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="48dp"
         android:background="@drawable/textviewbackground"
         android:fontFamily="sans-serif-condensed"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="1007dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageView
         android:id="@+id/imageView7"
